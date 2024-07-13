@@ -926,6 +926,7 @@ impl<T: Element, D: Dimension> PyArray<T, D> {
 }
 
 #[cfg(feature = "nalgebra")]
+#[cfg(feature = "gil-refs")]
 impl<N, D> PyArray<N, D>
 where
     N: nalgebra::Scalar + Element,
