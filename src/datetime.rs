@@ -66,7 +66,7 @@ use std::marker::PhantomData;
 use pyo3::{sync::GILProtected, Bound, Py, Python};
 use rustc_hash::FxHashMap;
 
-use crate::dtype::{Element, PyArrayDescr, PyArrayDescrMethods, impl_py_clone};
+use crate::dtype::{impl_py_clone, Element, PyArrayDescr, PyArrayDescrMethods};
 use crate::npyffi::{PyArray_DatetimeDTypeMetaData, NPY_DATETIMEUNIT, NPY_TYPES};
 
 /// Represents the [datetime units][datetime-units] supported by NumPy
